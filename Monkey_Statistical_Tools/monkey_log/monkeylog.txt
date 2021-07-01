@@ -1,0 +1,145 @@
+args: [--pkg-blacklist-file, /data/local/tmp/blacklist.txt, -s, 500, --ignore-crashes, --ignore-timeouts, --ignore-security-exceptions, --throttle, 500, -v, -v, -v, 99999999]
+ arg: "--pkg-blacklist-file"
+ arg: "/data/local/tmp/blacklist.txt"
+ arg: "-s"
+ arg: "500"
+ arg: "--ignore-crashes"
+ arg: "--ignore-timeouts"
+ arg: "--ignore-security-exceptions"
+ arg: "--throttle"
+ arg: "500"
+ arg: "-v"
+ arg: "-v"
+ arg: "-v"
+ arg: "99999999"
+arg="--pkg-blacklist-file" mCurArgData="null" mNextArg=1 argwas="--pkg-blacklist-file" nextarg="/data/local/tmp/blacklist.txt"
+data="/data/local/tmp/blacklist.txt"
+data="500"
+arg="--ignore-crashes" mCurArgData="null" mNextArg=5 argwas="--ignore-crashes" nextarg="--ignore-timeouts"
+arg="--ignore-timeouts" mCurArgData="null" mNextArg=6 argwas="--ignore-timeouts" nextarg="--ignore-security-exceptions"
+arg="--ignore-security-exceptions" mCurArgData="null" mNextArg=7 argwas="--ignore-security-exceptions" nextarg="--throttle"
+arg="--throttle" mCurArgData="null" mNextArg=8 argwas="--throttle" nextarg="500"
+data="500"
+// Shell command settings put global force_replace_pending_broadcasts_pattern google|DROPBOX_ENTRY|mail|rcs.intent.action status was 0
+// NOT RESPONDING: com.android.vending (pid 5383) Time Longth Since Monkey Start: 44726713
+ANR in com.android.vending (com.android.vending/.AssetBrowserActivity)
+PID: 5383
+Reason: Input dispatching timed out (Waiting to send key event because the focused window has not finished processing all of the input events that were previously delivered to it.  Outbound queue length: 0.  Wait queue length: 1.)
+Parent: com.android.vending/.AssetBrowserActivity
+Load: 4.28 / 3.2 / 2.53
+CPU usage from 12871ms to 22362ms later (2021-06-24 04:48:20.461 to 2021-06-24 04:48:29.952):
+  116% 5383/com.android.vending: 103% user + 12% kernel / faults: 27591 minor
+  40% 4688/com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedPro: 37% user + 3.5% kernel / faults: 7271 minor 3973 major
+  18% 791/system_server: 14% user + 3.5% kernel / faults: 1847 minor 6 major
+  2.4% 25782/kworker/u16:7: 0% user + 2.4% kernel
+  1.8% 210/sugov:0: 0% user + 1.8% kernel
+  1.3% 31003/com.android.chrome: 0.7% user + 0.6% kernel / faults: 959 minor 649 major
+  1.1% 82/kswapd0: 0% user + 1.1% kernel
+  0.9% 272/logd: 0.5% user + 0.4% kernel / faults: 68 minor 3 major
+  0.9% 1266/com.android.systemui: 0.5% user + 0.4% kernel / faults: 1152 minor 34 major
+  0.7% 427/surfaceflinger: 0.5% user + 0.2% kernel / faults: 68 minor
+  0.6% 392/android.hardware.graphics.composer@2.1-service: 0.2% user + 0.4% kernel / faults: 48 minor
+  0.5% 398/android.hardware.sensors@1.0-service: 0.1% user + 0.4% kernel / faults: 99 minor
+  0.3% 8/rcu_preempt: 0% user + 0.3% kernel
+  0.3% 211/sugov_perf:0: 0% user + 0.3% kernel
+  0.3% 4717/com.google.android.youtube: 0.2% user + 0.1% kernel / faults: 513 minor 134 major
+  0.3% 30909/com.google.android.gms.persistent: 0.2% user + 0.1% kernel / faults: 60 minor 9 major
+  0.2% 133/swcnblk-3-8: 0% user + 0.2% kernel
+  0.2% 2613/com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedPro: 0.1% user + 0.1% kernel / faults: 30 minor 115 major
+  0.1% 176/shub_rd_nwu: 0% user + 0.1% kernel
+  0.1% 197/mmcqd/0: 0% user + 0.1% kernel
+  0% 212/sugov:4: 0% user + 0% kernel
+  0% 491/wificond: 0% user + 0% kernel / faults: 30 minor
+  0% 2008/kworker/u17:3: 0% user + 0% kernel
+  0% 2054/kworker/3:1: 0% user + 0% kernel
+  0% 5251/kworker/0:2: 0% user + 0% kernel
+  0.1% 17899/android.hardware.wifi@1.0-service-lazy: 0.1% user + 0% kernel / faults: 17 minor
+  0.1% 23570/com.google.android.gms: 0% user + 0.1% kernel / faults: 115 minor
+  0.1% 26109/com.facebook.katana: 0% user + 0.1% kernel / faults: 161 minor 146 major
+  0.1% 29539/kworker/u17:1: 0% user + 0.1% kernel
+  0.1% 30148/kworker/u16:1: 0% user + 0.1% kernel
+24% TOTAL: 19% user + 3.3% kernel + 0.7% irq + 0.2% softirq
+CPU usage from 97ms to 798ms later (2021-06-24 04:48:07.687 to 2021-06-24 04:48:08.388):
+  121% 4688/com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedPro: 110% user + 10% kernel / faults: 678 minor 19 major
+    97% 4707/CrRendererMain: 91% user + 6.5% kernel
+    10% 4709/ThreadPoolForeg: 10% user + 0% kernel
+    4.3% 5353/ThreadPoolForeg: 4.3% user + 0% kernel
+    2.1% 4710/Chrome_ChildIOT: 0% user + 2.1% kernel
+    2.1% 5358/ThreadPoolForeg: 2.1% user + 0% kernel
+    2.1% 5567/Media: 0% user + 2.1% kernel
+  81% 791/system_server: 40% user + 40% kernel / faults: 812 minor
+    61% 964/InputDispatcher: 27% user + 33% kernel
+    11% 808/Binder:791_2: 9.2% user + 1.8% kernel
+    3.7% 2175/Binder:791_12: 1.8% user + 1.8% kernel
+    3.7% 3483/Binder:791_17: 3.7% user + 0% kernel
+    1.8% 950/SensorService: 0% user + 1.8% kernel
+    1.8% 17917/IpClient.wlan0: 0% user + 1.8% kernel
+  102% 5383/com.android.vending: 88% user + 14% kernel / faults: 1187 minor
+    83% 5383/android.vending: 75% user + 7.3% kernel
+    9.7% 5427/algo: 4.8% user + 4.8% kernel
+    9.7% 5454/SequenceEventBu: 7.3% user + 2.4% kernel
+    2.4% 5389/Jit thread pool: 0% user + 2.4% kernel
+  36% 31003/com.android.chrome: 24% user + 12% kernel / faults: 82 minor
+    12% 31107/NetworkService: 9.1% user + 3% kernel
+    6.1% 31098/ThreadPoolForeg: 3% user + 3% kernel
+    6.1% 31099/Chrome_IOThread: 3% user + 3% kernel
+    3% 31003/.android.chrome: 3% user + 0% kernel
+    3% 31017/FinalizerDaemon: 3% user + 0% kernel
+    3% 31168/JardinExecutor: 3% user + 0% kernel
+  12% 492/media.codec: 3.5% user + 8.9% kernel / faults: 366 minor
+    5.3% 2505/HwBinder:492_6: 0% user + 5.3% kernel
+    1.7% 18621/HwBinder:492_4: 0% user + 1.7% kernel
+   +0% 5603/rd.h264.decoder: 0% user + 0% kernel
+   +0% 5604/OMXCallbackDisp: 0% user + 0% kernel
+  25% 32598/com.android.chrome:privileged_process1: 14% user + 10% kernel / faults: 48 minor 2 major
+    7.1% 5574/ThreadPoolSingl: 7.1% user + 0% kernel
+    7.1% 32633/ThreadPoolForeg: 3.5% user + 3.5% kernel
+   +0% 5601/MediaCodec_loop: 0% user + 0% kernel
+   +0% 5602/CodecLooper: 0% user + 0% kernel
+  4.7% 272/logd: 3.1% user + 1.5% kernel / faults: 3 minor 1 major
+    4.7% 287/logd.writer: 3.1% user + 1.5% kernel
+  5% 419/audioserver: 5% user + 0% kernel
+    5% 771/FastMixer: 3.3% user + 1.6% kernel
+    3.3% 772/AudioOut_D: 3.3% user + 0% kernel
+  3.2% 380/netd: 1.6% user + 1.6% kernel / faults: 91 minor
+   +0% 5606/netd: 0% user + 0% kernel
+   +0% 5607/netd: 0% user + 0% kernel
+  3.3% 427/surfaceflinger: 1.6% user + 1.6% kernel / faults: 1 minor
+    1.6% 1526/Binder:427_4: 1.6% user + 0% kernel
+  1.4% 7/ksoftirqd/0: 0% user + 1.4% kernel
+  1.4% 125/sbuf-6-4: 0% user + 1.4% kernel
+  1.4% 133/swcnblk-3-8: 0% user + 1.4% kernel
+  1.5% 274/hwservicemanager: 1.5% user + 0% kernel / faults: 37 minor
+  1.6% 385/android.hardware.audio@2.0-service: 0% user + 1.6% kernel
+    3.2% 6371/writer: 0% user + 3.2% kernel
+  1.6% 391/android.hardware.graphics.allocator@2.0-service: 0% user + 1.6% kernel / faults: 31 minor
+    4.9% 1766/HwBinder:391_2: 1.6% user + 3.3% kernel
+  1.6% 423/lmkd: 0% user + 1.6% kernel
+  1.7% 476/mediaserver: 0% user + 1.7% kernel / faults: 6 minor
+  2.9% 29539/kworker/u17:1: 0% user + 2.9% kernel
+53% TOTAL: 38% user + 13% kernel + 0.1% iowait + 0.9% irq + 0.5% softirq
+
+// CRASH: com.google.android.gm (pid 22544) Time Longth Since Monkey Start: 70210032
+// Short Msg: java.lang.ArrayIndexOutOfBoundsException
+// Long Msg: java.lang.ArrayIndexOutOfBoundsException: length=0; index=-2
+// Build Label: WALTON/Primo_HM6_Lite/Primo_HM6_Lite:10/QP1A.190711.020/154:user/release-keys
+// Build Changelist: 154
+// Build Time: 1622408432000
+// CRASH: com.google.android.apps.speechservices:search (pid 18572) Time Longth Since Monkey Start: 105613171
+// Short Msg: java.lang.RuntimeException
+// Long Msg: java.lang.RuntimeException: Request ID is invalid: null
+// Build Label: WALTON/Primo_HM6_Lite/Primo_HM6_Lite:10/QP1A.190711.020/154:user/release-keys
+// Build Changelist: 154
+// Build Time: 1622408432000
+// CRASH: com.skyroutemedialimited.risingbd (pid 14745) Time Longth Since Monkey Start: 122236049
+// Short Msg: Native crash
+// Long Msg: Native crash: Aborted
+// Build Label: WALTON/Primo_HM6_Lite/Primo_HM6_Lite:10/QP1A.190711.020/154:user/release-keys
+// Build Changelist: 154
+// Build Time: 1622408432000
+// CRASH: com.skyroutemedialimited.risingbd (pid 17604) Time Longth Since Monkey Start: 164006918
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v7.widget.RecyclerView.smoothScrollToPosition(int)' on a null object reference
+// Build Label: WALTON/Primo_HM6_Lite/Primo_HM6_Lite:10/QP1A.190711.020/154:user/release-keys
+// Build Changelist: 154
+// Build Time: 1622408432000
